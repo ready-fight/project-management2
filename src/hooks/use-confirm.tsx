@@ -60,7 +60,7 @@ export const useConfirm = (
               variant={variant}
               className="w-full lg:w-auto"
             >
-              確認
+              承認
             </Button>
           </div>
         </CardContent>
