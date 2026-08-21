@@ -44,14 +44,16 @@ const app = new Hono()
           image
         );
 
-        const arrayBuffer = await storage.getFilePreview(
-          IMAGES_BUCKET_ID,
-          file.$id
-        );
+        // const arrayBuffer = await storage.getFilePreview(
+        //   IMAGES_BUCKET_ID,
+        //   file.$id
+        // );
 
-        uploadedImageUrl = `data:image/png;base64,${Buffer.from(
-          arrayBuffer
-        ).toString("base64")}`;
+        // uploadedImageUrl = `data:image/png;base64,${Buffer.from(
+        //   arrayBuffer
+        // ).toString("base64")}`;
+
+        uploadedImageUrl = `${process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT}/storage/buckets/${IMAGES_BUCKET_ID}/files/${file.$id}/view?project=${process.env.NEXT_PUBLIC_APPWRITE_PROJECT}`;
       }
 
       const project = await databases.createDocument(
@@ -161,14 +163,16 @@ const app = new Hono()
           image
         );
 
-        const arrayBuffer = await storage.getFilePreview(
-          IMAGES_BUCKET_ID,
-          file.$id
-        );
+        // const arrayBuffer = await storage.getFilePreview(
+        //   IMAGES_BUCKET_ID,
+        //   file.$id
+        // );
 
-        uploadedImageUrl = `data:image/png;base64,${Buffer.from(
-          arrayBuffer
-        ).toString("base64")}`;
+        // uploadedImageUrl = `data:image/png;base64,${Buffer.from(
+        //   arrayBuffer
+        // ).toString("base64")}`;
+
+        uploadedImageUrl = `${process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT}/storage/buckets/${IMAGES_BUCKET_ID}/files/${file.$id}/view?project=${process.env.NEXT_PUBLIC_APPWRITE_PROJECT}`;
       } else {
         uploadedImageUrl = image;
       }
