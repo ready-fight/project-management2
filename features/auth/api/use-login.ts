@@ -19,7 +19,7 @@ export const useLogin = () => {
       return await response.json();
     },
     onSuccess: () => {
-      toast.success("Logged in.");
+      toast.success("ログインしました。");
       router.refresh();
       queryClient.invalidateQueries({ queryKey: ["current"] });
     },
