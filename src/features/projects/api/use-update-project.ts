@@ -29,7 +29,7 @@ export const useUpdateProject = () => {
       return await response.json();
     },
     onSuccess: ({ data }) => {
-      toast.success("Project updated.");
+      toast.success("プロジェクトを更新しました。");
       queryClient.invalidateQueries({ queryKey: ["projects"] });
       queryClient.invalidateQueries({ queryKey: ["project", data.$id] });
     },
