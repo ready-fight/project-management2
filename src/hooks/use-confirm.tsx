@@ -53,14 +53,14 @@ export const useConfirm = (
               variant="outline"
               className="w-full lg:w-auto"
             >
-              Cancel
+              キャンセル
             </Button>
             <Button
               onClick={handleConfirm}
               variant={variant}
               className="w-full lg:w-auto"
             >
-              Confirm
+              確認
             </Button>
           </div>
         </CardContent>
