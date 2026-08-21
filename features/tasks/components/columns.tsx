@@ -24,7 +24,7 @@ export const columns: ColumnDef<Task>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Task Name
+          タスク名
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );
@@ -99,7 +99,7 @@ export const columns: ColumnDef<Task>[] = [
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Due Date
+          締切日
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );

@@ -59,14 +59,14 @@ export const TaskActions = ({ id, projectId, children }: TaskActionsProps) => {
             className="font-medium p-[10px]"
           >
             <ExternalLink className="size-4 mr-2 stroke-2" />
-            Task Details
+            タスクの詳細
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={onOpenProject}
             className="font-medium p-[10px]"
           >
             <ExternalLink className="size-4 mr-2 stroke-2" />
-            Open Project
+            プロジェクトを開く
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={() => {
@@ -75,7 +75,7 @@ export const TaskActions = ({ id, projectId, children }: TaskActionsProps) => {
             className="font-medium p-[10px]"
           >
             <PencilIcon className="size-4 mr-2 stroke-2" />
-            Edit Task
+            タスクを編集
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={onDelete}
@@ -83,7 +83,7 @@ export const TaskActions = ({ id, projectId, children }: TaskActionsProps) => {
             className="text-amber-700 focus:text-amber-700 font-medium p-[10px]"
           >
             <TrashIcon className="size-4 mr-2 stroke-2" />
-            Delete Task
+            タスクを削除
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

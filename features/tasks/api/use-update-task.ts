@@ -29,7 +29,7 @@ export const useUpdateTask = () => {
       return await response.json();
     },
     onSuccess: ({ data }) => {
-      toast.success("Task updated.");
+      toast.success("タスクを更新しました。");
       queryClient.invalidateQueries({ queryKey: ["project-analytics"] });
       queryClient.invalidateQueries({ queryKey: ["workspace-analytics"] });
       queryClient.invalidateQueries({ queryKey: ["tasks"] });

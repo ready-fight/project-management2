@@ -94,7 +94,7 @@ export const EditTaskForm = ({
                   <FormItem>
                     <FormLabel>Task Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter task name" {...field} />
+                      <Input placeholder="タスク名を入力" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

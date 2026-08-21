@@ -84,9 +84,9 @@ export const CreateTaskForm = ({
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Task Name</FormLabel>
+                    <FormLabel>タスク名</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter task name" {...field} />
+                      <Input placeholder="タスク名を入力" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -117,7 +117,7 @@ export const CreateTaskForm = ({
                     >
                       <FormControl>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select assignee" />
+                          <SelectValue placeholder="担当者を選択" />
                         </SelectTrigger>
                       </FormControl>
                       <FormMessage />
@@ -150,7 +150,7 @@ export const CreateTaskForm = ({
                     >
                       <FormControl>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select status" />
+                          <SelectValue placeholder="ステータスを選択" />
                         </SelectTrigger>
                       </FormControl>
                       <FormMessage />
@@ -183,7 +183,7 @@ export const CreateTaskForm = ({
                     >
                       <FormControl>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select project" />
+                          <SelectValue placeholder="プロジェクトを選択" />
                         </SelectTrigger>
                       </FormControl>
                       <FormMessage />
@@ -216,10 +216,10 @@ export const CreateTaskForm = ({
                 disabled={isPending}
                 className={cn(!onCancel && "invisible")}
               >
-                Cancel
+                キャンセル
               </Button>
               <Button type="submit" size="lg" disabled={isPending}>
-                Create Task
+                タスクを作成
               </Button>
             </div>
           </form>

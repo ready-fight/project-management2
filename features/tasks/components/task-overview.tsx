@@ -27,7 +27,7 @@ export const TaskOverview = ({ task }: TaskOverviewProps) => {
           <p className="text-lg font-semibold">Overview</p>
           <Button onClick={() => open(task.$id)} size="sm" variant="secondary">
             <PencilIcon className="size-4 mr-2" />
-            Edit
+            編集
           </Button>
         </div>
         <DottedSeparator className="my-4" />
