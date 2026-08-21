@@ -2,8 +2,8 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa6";
+// import { FcGoogle } from "react-icons/fc";
+// import { FaGithub } from "react-icons/fa6";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -18,7 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { signUpWithGithub, signUpWithGoogle } from "@/lib/oauth";
+// import { signUpWithGithub, signUpWithGoogle } from "@/lib/oauth";
 
 import { loginSchema } from "../schemas";
 import { useLogin } from "../api/use-login";
