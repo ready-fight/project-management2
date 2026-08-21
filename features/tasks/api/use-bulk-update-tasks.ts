@@ -29,7 +29,7 @@ export const useBulkUpdateTasks = () => {
       return await response.json();
     },
     onSuccess: () => {
-      toast.success("Tasks updated.");
+      toast.success("タスクを更新しました。");
       queryClient.invalidateQueries({ queryKey: ["project-analytics"] });
       queryClient.invalidateQueries({ queryKey: ["workspace-analytics"] });
       queryClient.invalidateQueries({ queryKey: ["tasks"] });
